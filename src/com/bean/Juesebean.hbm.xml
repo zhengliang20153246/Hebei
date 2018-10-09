@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--配置类和表结构的映射 -->
+	<class name="com.bean.Juesebean" table="quanxian">
+		<!-- 配置id name属性是javabean的属性 column是表结构的字段 -->
+		<id name="id" column="id">
+			<!-- 主键的生成策略 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="name"></property>
+		<property name="tianbao" column="tianbao"></property>
+		<property name="chakangerenshenhexuqiu" column="chakangerenshenhexuqiu"></property>
+		<property name="chakanquanbushenhexuqiu" column="chakanquanbushenhexuqiu"></property>
+		<property name="xuqiuxiugai" column="xuqiuxiugai"></property>
+		<property name="chakanquanbu" column="chakanquanbu"></property>
+		<property name="chakangeren" column="chakangeren"></property>
+		<property name="chakantuihui" column="chakantuihui"></property>
+		<property name="shenhexuqiu" column="shenhexuqiu"></property>
+		<property name="chakanuser" column="chakanuser"></property>
+		<property name="xinxixiugai" column="xinxixiugai"></property>
+		<property name="mimaxiugai" column="mimaxiugai"></property>
+		
+
+	</class>
+
+
+
+</hibernate-mapping>

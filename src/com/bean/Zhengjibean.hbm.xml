@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--配置类和表结构的映射 -->
+	<class name="com.bean.Zhengjibean" table="zhengji">
+		<!-- 配置id name属性是javabean的属性 column是表结构的字段 -->
+		<id name="id" column="id">
+			<!-- 主键的生成策略 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="status" column="status"></property>
+		<property name="createdate" column="createdate"></property>
+		<property name="userid" column="userid"></property>
+		<property name="jiname" column="jiname"></property>
+		<property name="guikou" column="guikou"></property>
+		<property name="tongxundizhi" column="tongxundizhi"></property>
+		<property name="suozaidiyu" column="suozaidiyu"></property>
+		<property name="wangzhi" column="wangzhi"></property>
+		<property name="dianzixinxiang" column="dianzixinxiang"></property>
+		<property name="farendaibiao" column="farendaibiao"></property>
+		<property name="youzhengbianma" column="youzhengbianma"></property>
+		<property name="lianxi" column="lianxi"></property>
+		<property name="dianhua" column="dianhua"></property>
+		<property name="shouji" column="shouji"></property>
+		<property name="chuangzhen" column="chuangzhen"></property>
+		<property name="jigoushuxing" column="jigoushuxing"></property>
+		<property name="jigoujianjie" column="jigoujianjie"></property>
+		<property name="jishuxuqiuname" column="jishuxuqiuname"></property>
+		<property name="xuqiuqianyear" column="xuqiuqianyear"></property>
+		<property name="xuqiuhouyear" column="xuqiuhouyear"></property>
+		<property name="xuqiugaishu" column="xuqiugaishu"></property>
+		<property name="guanjian3" column="guanjian3"></property>
+		<property name="guanjian4" column="guanjian4"></property>
+		<property name="guanjian2" column="guanjian2"></property>
+		<property name="guanjian1" column="guanjian1"></property>
+		<property name="guanjian5" column="guanjian5"></property>
+		<property name="jine" column="jine"></property>
+		<property name="xuqiujiejuefangshi" column="xuqiujiejuefangshi"></property>
+		
+		<property name="hezuodanwei" column="hezuodanwei"></property>
+		<property name="kejihuodongleixing" column="kejihuodongleixing"></property>
+		<property name="xuekenfenlei" column="xuekenfenlei"></property>
+		<property name="twoxueke" column="twoxueke"></property>
+		<property name="lingyu" column="lingyu"></property>
+		<property name="hangye" column="hangye"></property>
+
+	</class>
+
+
+
+</hibernate-mapping>

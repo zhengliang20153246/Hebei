@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--配置类和表结构的映射 -->
+	<class name="com.bean.Hangyebean" table="hangye">
+		<!-- 配置id name属性是javabean的属性 column是表结构的字段 -->
+		<id name="id" column="id">
+			<!-- 主键的生成策略 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="name"></property>
+
+	</class>
+
+
+
+</hibernate-mapping>

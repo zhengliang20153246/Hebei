@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+	<session-factory>
+	<!--数据库的驱动  -->
+	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+	<!-- 需要连接的数据库名称 -->
+	<property name="hibernate.connection.url">jdbc:mysql:///xuqiu</property>
+	<!-- 用户名 -->
+	<property name="hibernate.connection.username">root</property>
+	<!-- 密码 -->
+	<property name="hibernate.connection.password">20153246</property>
+	
+	<!-- 数据库的方言 -->
+	<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	
+	<!-- 可选择的配置参数 -->
+		<!-- 显示数据库语句，在控制台显示 -->
+		<property name="hibernate.show_sql">true</property>
+		<!-- 格式化sql语句 -->
+		<property name="hibernate.format_sql">true</property>
+		<!-- 生成数据库的表结构 
+		create就是当数据库存在这张表时，删了重新创建，如果不存在就创建，每次运行都会重新创建
+		create-drop就是每次创建然后再删除
+		update没有表结构，创建表结构，有表结构直接修改数据
+		validate就是验证数据库表结构和Javabean是不是完全映射成功，起校验的作用
+		-->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- 设置数据库的隔离级别 -->
+		<property name="hibernate.connection.isolation">4</property>
+		
+		
+		<!-- 开启绑定本地的session -->
+		
+		<property name="hibernate.current_session_context_class">thread</property>
+		
+		
+		<!-- 映射配置文件，需要引入映射的配置文件 -->
+		<mapping resource="com/bean/Hangyebean.hbm.xml"/>
+		<mapping resource="com/bean/Juesebean.hbm.xml"/>
+		<mapping resource="com/bean/Tuihuibean.hbm.xml"/>
+		<mapping resource="com/bean/Userbean.hbm.xml"/>
+		<mapping resource="com/bean/Xuekebean.hbm.xml"/>
+		<mapping resource="com/bean/Zhengjibean.hbm.xml"/>
+	
+	
+	</session-factory>
+	
+	
+	
+	</hibernate-configuration>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<!--配置类和表结构的映射 -->
+	<class name="com.bean.Userbean" table="user">
+		<!-- 配置id name属性是javabean的属性 column是表结构的字段 -->
+		<id name="id" column="id">
+			<!-- 主键的生成策略 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="shenfen" column="shenfen"></property>
+		<property name="username" column="username"></property>
+		<property name="password" column="password"></property>
+		<property name="name" column="name"></property>
+		<property name="shenfenhao" column="shenfenhao"></property>
+		<property name="shi" column="shi"></property>
+		<property name="danwei" column="danwei"></property>
+		<property name="zhuanye" column="zhuanye"></property>
+		<property name="hangye" column="hangye"></property>
+		<property name="jiaoyu" column="jiaoyu"></property>
+		<property name="zhicheng" column="zhicheng"></property>
+		<property name="tongxundizhi" column="tongxundizhi"></property>
+		<property name="youzhengbianma" column="youzhengbianma"></property>
+		<property name="shouji" column="shouji"></property>
+		<property name="dianhua" column="dianhua"></property>
+		<property name="youxiang" column="youxiang"></property>
+		
+
+	</class>
+
+
+
+</hibernate-mapping>
